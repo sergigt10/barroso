@@ -1,197 +1,70 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <!-- Slider -->
-    <header class="header slider-fade">
-        <!-- Desktop version -->
-        <div class="owl-carousel owl-theme mobile-hidden">
-            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{ asset('frontend/img/slider/2.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>A Girona des de 1949</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/4.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Especialistes en ortodòncia, <br>implants i estètica</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{ asset('frontend/img/slider/3.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>A l'avantguarda de la innovació</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/slide-2.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tú</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Desktop version -->
-
-        <!-- Mobile version -->
-        <div class="owl-carousel owl-theme mobile-show" style="display: none;">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/4.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Especialistes en ortodòncia, <br>implants i estètica</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/slide-2.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tú</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Mobile version -->
-
-    </header>
-    <!-- About -->
-    <section class="about">
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="{{ asset('frontend/img/clinica-dental.jpg') }}">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
-                    <div class="section-subtitle"></div>
-                    <div class="section-title mt-60">Un equip centrat en tu</div>
-                    <p>Clínica Barroso posa a disposició un equip multidisciplinar experts en ortodòncia i odontopediatria, implantologia i rehabilitació oral, estètica dental, endodòncia i periodòncia amb els coneixements més actualitzats per a que la teva experiència sigui la millor possible.</p>
-                    <p>Cada cas serà tractat de manera individualitzada, buscant un tractament “fet a mida” per a cada situació particular.</p>
-                    <div class="reservations">
-                        <div class="icon"><span class="flaticon-call"></span></div>
-                        <div class="text">
-                            <p>Cita previa</p> <a href="tel:+34972208901">972 208 901</a>
-                        </div>
-                    </div>
+				<div class="col-md-12 caption mt-90"></div>
+			</div>
+        </div>
+    </div>
+    <!-- Image Gallery -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-subtitle">Les nostres instal·lacions</div>
+                    <div class="section-title">La clínica</div>
                 </div>
-                <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
-                    <img class="mobile-image" style="width: 732px;" src="{{ asset('frontend/img/clinica-dental-girona.jpg') }}" alt="Clínica Barroso" class="mt-0">
+                <!-- 3 columns -->
+                <div class="col-md-4 gallery-item">
+                    <a href="{{ asset('frontend/img/clinica-dental-girona-1.jpg') }}" title="Clínica dental Barroso" class="img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('frontend/img/clinica-dental-girona-1.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="{{ asset('frontend/img/clinica-dental-girona-2.jpg') }}" title="Clínica dental Barroso" class="img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('frontend/img/clinica-dental-girona-2.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="{{ asset('frontend/img/clinica-dental-girona-3.jpg') }}" title="Clínica dental Barroso" class="img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('frontend/img/clinica-dental-girona-3.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 gallery-item">
+                    <a href="{{ asset('frontend/img/clinica-dental-girona-4.jpg') }}" title="Clínica dental Barroso" class="img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('frontend/img/clinica-dental-girona-4.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 gallery-item">
+                    <a href="{{ asset('frontend/img/clinica-dental-girona-5.jpg') }}" title="Clínica dental Barroso" class="img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('frontend/img/clinica-dental-girona-5.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 gallery-item">
+                    <a href="{{ asset('frontend/img/clinica-dental-girona-6.jpg') }}" title="Clínica dental Barroso" class="img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('frontend/img/clinica-dental-girona-6.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="services section-padding section-padding-portada">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="disseny-somriures.html">
-                            <img src="{{ asset('frontend/img/somriure.jpg') }}" alt="Clínica Barroso">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>Disseny de somriures</h4>
-                            <p>Somriure és un acte instintiu, natural i fins i tot beneficiós per a la salut.</p>
-                            <div class="butn-dark"> 
-                                <a href="disseny-somriures.html"><span>Veure més</span></a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>Odontologia avançada</h4>
-                            <p>Buscant l' excel.lència en cada tractament.</p>
-                            <div class="butn-dark"> <a href="#"><span>Veure més </span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="#"><img src="{{ asset('frontend/img/odo.jpg') }}" alt="Clínica Barroso"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="#"><img src="{{ asset('frontend/img/es.jpg') }}" alt="Clínica Barroso"></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>Especialistes en ortodòncia, implants i estètica
-                            </h4>
-                            <p>Formació, dedicació, resultats.</p>
-                            <div class="butn-dark"> <a href="dentista-girona.html"><span>Veure més </span></a> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>La veu de l'expert</h4>
-                            <p> Innovació i actualització constants.</p>
-                            <div class="butn-dark"> <a href="invisalign-girona.html"><span>Veure més </span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="invisalign-girona.html"><img src="{{ asset('frontend/img/ex.jpg') }}" alt="Clínica Barroso"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="3" data-background="{{ asset('frontend/img/central.jpg') }}">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                   <br><br><br>
-                    <div class="section-subtitle"><span>CLÍNICA BARROSO</span></div>
-                    <div class="section-title"><span>Una clínica dental amb historia</span></div>
-                    <div class="butn-dark"> <a href="historia.html"><span>Veure més </span></a> </div>
-                </div>
-            </div>  
-        </div>
-    </section>
+    <!-- Video Gallery -->
 @endsection

@@ -109,7 +109,7 @@
             <div class="row">
                 <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
                     <div class="img left">
-                        <a href="disseny-somriures.html">
+                        <a href="{{ route('frontend.dissenySomriures.index') }}">
                             <img src="{{ asset('frontend/img/somriure.jpg') }}" alt="Clínica Barroso">
                         </a>
                     </div>
@@ -121,7 +121,7 @@
                             <h4>Disseny de somriures</h4>
                             <p>Somriure és un acte instintiu, natural i fins i tot beneficiós per a la salut.</p>
                             <div class="butn-dark"> 
-                                <a href="disseny-somriures.html"><span>Veure més</span></a> 
+                                <a href="{{ route('frontend.dissenySomriures.index') }}"><span>Veure més</span></a> 
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                         <div class="cont text-left">
                             <div class="info"></div>
                             <h4>Odontologia avançada</h4>
-                            <p>Buscant l' excel.lència en cada tractament.</p>
+                            <p>Buscant l'excel·lència en cada tractament.</p>
                             <div class="butn-dark"> <a href="#"><span>Veure més </span></a> </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
                     <div class="img left">
-                        <a href="#"><img src="{{ asset('frontend/img/es.jpg') }}" alt="Clínica Barroso"></a>
+                        <a href="{{ route('frontend.dentistaGirona.index') }}"><img src="{{ asset('frontend/img/es.jpg') }}" alt="Clínica Barroso"></a>
                     </div>
                 </div>
                 <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
@@ -157,7 +157,7 @@
                             <h4>Especialistes en ortodòncia, implants i estètica
                             </h4>
                             <p>Formació, dedicació, resultats.</p>
-                            <div class="butn-dark"> <a href="dentista-girona.html"><span>Veure més </span></a> </div>
+                            <div class="butn-dark"> <a href="{{ route('frontend.dentistaGirona.index') }}"><span>Veure més </span></a> </div>
                         </div>
                     </div>
                 </div>
@@ -169,13 +169,13 @@
                             <div class="info"></div>
                             <h4>La veu de l'expert</h4>
                             <p> Innovació i actualització constants.</p>
-                            <div class="butn-dark"> <a href="invisalign-girona.html"><span>Veure més </span></a> </div>
+                            <div class="butn-dark"> <a href="{{ route('frontend.invisalign.index') }}"><span>Veure més </span></a> </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
                     <div class="img">
-                        <a href="invisalign-girona.html"><img src="{{ asset('frontend/img/ex.jpg') }}" alt="Clínica Barroso"></a>
+                        <a href="{{ route('frontend.invisalign.index') }}"><img src="{{ asset('frontend/img/ex.jpg') }}" alt="Clínica Barroso"></a>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                    <br><br><br>
                     <div class="section-subtitle"><span>CLÍNICA BARROSO</span></div>
                     <div class="section-title"><span>Una clínica dental amb historia</span></div>
-                    <div class="butn-dark"> <a href="historia.html"><span>Veure més </span></a> </div>
+                    <div class="butn-dark"> <a href="{{ route('frontend.historia.index') }}"><span>Veure més </span></a> </div>
                 </div>
             </div>  
         </div>

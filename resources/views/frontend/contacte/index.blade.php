@@ -1,197 +1,87 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <!-- Slider -->
-    <header class="header slider-fade">
-        <!-- Desktop version -->
-        <div class="owl-carousel owl-theme mobile-hidden">
-            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{ asset('frontend/img/slider/2.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>A Girona des de 1949</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/4.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Especialistes en ortodòncia, <br>implants i estètica</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{ asset('frontend/img/slider/3.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>A l'avantguarda de la innovació</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/slide-2.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tú</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Desktop version -->
-
-        <!-- Mobile version -->
-        <div class="owl-carousel owl-theme mobile-show" style="display: none;">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/4.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Especialistes en ortodòncia, <br>implants i estètica</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/slide-2.jpg') }}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tú</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Mobile version -->
-
-    </header>
-    <!-- About -->
-    <section class="about">
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="{{ asset('frontend/img/contacte.jpg') }}">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
-                    <div class="section-subtitle"></div>
-                    <div class="section-title mt-60">Un equip centrat en tu</div>
-                    <p>Clínica Barroso posa a disposició un equip multidisciplinar experts en ortodòncia i odontopediatria, implantologia i rehabilitació oral, estètica dental, endodòncia i periodòncia amb els coneixements més actualitzats per a que la teva experiència sigui la millor possible.</p>
-                    <p>Cada cas serà tractat de manera individualitzada, buscant un tractament “fet a mida” per a cada situació particular.</p>
-                    <div class="reservations">
+                <div class="col-md-12 text-left caption mt-90">
+                    <h5>Vols demanar una cita?</h5>
+                    <h1>Contacte</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Banner -->
+    
+    <!-- Contact -->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="row mb-90">
+                <div class="col-md-6 mb-60">
+                    <h3>Contacti amb nosaltres</h3>
+                    <p>Si desitja contactar amb nosaltres per a qualsevol comentari, consulta o sol·licitud, li posem a disposició i un formulari de contacte per poder escriure'ns quan vostè ho necessiti.</p>
+                    <div class="reservations mb-30">
                         <div class="icon"><span class="flaticon-call"></span></div>
                         <div class="text">
-                            <p>Cita previa</p> <a href="tel:+34972208901">972 208 901</a>
+                            <p>Telèfon</p> <a href="tel:972208901">972 208 901
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reservations mb-30">
+                        <div class="icon"><span class="flaticon-envelope"></span></div>
+                        <div class="text">
+                            <p>Correu electrònic</p> <a href="mailto:info@clinicabarroso.com">info@clinicabarroso.com</a>
+                        </div>
+                    </div>
+                    <div class="reservations">
+                        <div class="icon"><span class="flaticon-location-pin"></span></div>
+                        <div class="text">
+                            <p>Direcció</p> Pujada Creu de Palau, 11-13 
+                            <br>17003-Girona
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
-                    <img class="mobile-image" style="width: 732px;" src="{{ asset('frontend/img/clinica-dental-girona.jpg') }}" alt="Clínica Barroso" class="mt-0">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services section-padding section-padding-portada">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="disseny-somriures.html">
-                            <img src="{{ asset('frontend/img/somriure.jpg') }}" alt="Clínica Barroso">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>Disseny de somriures</h4>
-                            <p>Somriure és un acte instintiu, natural i fins i tot beneficiós per a la salut.</p>
-                            <div class="butn-dark"> 
-                                <a href="disseny-somriures.html"><span>Veure més</span></a> 
+                <div class="col-md-5 mb-30 offset-md-1">
+                    <h3>Formulari de contacte</h3>
+                    <form method="post" class="contact__form" action="mail.php">
+                        <!-- form message -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert"> El vostre missatge s'ha enviat correctament </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>Odontologia avançada</h4>
-                            <p>Buscant l' excel.lència en cada tractament.</p>
-                            <div class="butn-dark"> <a href="#"><span>Veure més </span></a> </div>
+                        <!-- form elements -->
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input name="name" type="text" placeholder="Nom i cognoms *" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="email" type="email" placeholder="Correu electrònic *" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="phone" type="text" placeholder="Telèfon *" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="subject" type="text" placeholder="Població *" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea name="message" id="message" cols="30" rows="4" placeholder="Missatge *" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="butn-dark"><a href="#0"><span>Enviar</span></a></button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="#"><img src="{{ asset('frontend/img/odo.jpg') }}" alt="Clínica Barroso"></a>
-                    </div>
+                    </form>
                 </div>
             </div>
+            <!-- Map Section -->
             <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="#"><img src="{{ asset('frontend/img/es.jpg') }}" alt="Clínica Barroso"></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>Especialistes en ortodòncia, implants i estètica
-                            </h4>
-                            <p>Formació, dedicació, resultats.</p>
-                            <div class="butn-dark"> <a href="dentista-girona.html"><span>Veure més </span></a> </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5933.066452391385!2d2.821158!3d41.96736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae6d4448da7eb%3A0xe87c17e76c5d66!2sBARROSO%20CL%C3%8DNICA%20DENTAL!5e0!3m2!1ses!2sus!4v1692953869786!5m2!1ses!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info"></div>
-                            <h4>La veu de l'expert</h4>
-                            <p> Innovació i actualització constants.</p>
-                            <div class="butn-dark"> <a href="invisalign-girona.html"><span>Veure més </span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="invisalign-girona.html"><img src="{{ asset('frontend/img/ex.jpg') }}" alt="Clínica Barroso"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="3" data-background="{{ asset('frontend/img/central.jpg') }}">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                   <br><br><br>
-                    <div class="section-subtitle"><span>CLÍNICA BARROSO</span></div>
-                    <div class="section-title"><span>Una clínica dental amb historia</span></div>
-                    <div class="butn-dark"> <a href="historia.html"><span>Veure més </span></a> </div>
-                </div>
-            </div>  
         </div>
     </section>
 @endsection

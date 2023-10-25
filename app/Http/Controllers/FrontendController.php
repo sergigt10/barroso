@@ -43,4 +43,39 @@ class FrontendController extends Controller
         return view('frontend.contacte.index');
     }
 
+    public function historia()
+    {
+        SEOTools::setTitle('Historia');
+
+        return view('frontend.historia.index');
+    }
+
+    public function dentista()
+    {
+        SEOTools::setTitle('Dentista Girona');
+
+        return view('frontend.dentistaGirona.index');
+    }
+
+    public function disseny()
+    {
+        SEOTools::setTitle('Disseny Somriures');
+
+        return view('frontend.dissenySomriures.index');
+    }
+
+    public function invisalign()
+    {
+        SEOTools::setTitle('Invisalign Girona');
+
+        return view('frontend.invisalign.index');
+    }
+
+    public function implantsQualitat()
+    {
+        SEOTools::setTitle('Implants de qualitat');
+
+        return view('frontend.implantsQualitat.index');
+    }
+
 }
