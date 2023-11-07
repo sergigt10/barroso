@@ -1,25 +1,28 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<section class="banner-style-one">
-    <div class="parallax" style="background-image: url({{ asset('frontend/assets/images/productes-seguretat-i-foc.jpg') }});"></div>
-    <div class="container">
-        <div class="row">
-            <div class="banner-details">
-                <h2>Error 404</h2>
+    <section class="comming section-padding">
+        <div class="v-middle">
+            <div class="container">
+                <div class="row text-center mb-30">
+                    <div class="col-md-12">
+                        <h2>PÀGINA NO DISPONIBLE</h2>
+                    </div>
+                </div>
+                <div class="row mb-30">
+                    <div class="col-md-12 text-center">
+                        <h1>ERROR 404</h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="go-back col-md-12">
+                        <a href='{{ route('frontend.inici.index') }}'> 
+                            <span><i class="ti-arrow-left" aria-hidden="true"></i></span>
+                            &nbsp; Tornar a la pàgina d'inici 
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="gap product-detail light-bg-transparent">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                Pàgina no disponible. <a href="https://www.clinicabarroso.com/">Tornar a la pàgina d'inici.</a>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
 @endsection

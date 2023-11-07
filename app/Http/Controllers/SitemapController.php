@@ -18,34 +18,17 @@ class SitemapController extends Controller
         $startOfMonth = Carbon::now()->startOfMonth()->format('c');
         $statics = [
             '',
-            'empresa.html',
-            'serveis.html',
-            'contacte.html'
+            'nosaltres',
+            'clinica-dental-girona',
+            'testimonials',
+            'contacte',
+            'disseny-somriures',
+            'dentista-girona',
+            'invisalign-girona',
+            'historia'
         ];
         return response()->view('frontend.sitemap.statics', [
             'statics' => $statics,
-            'startOfMonth' => $startOfMonth
-        ])->header('Content-Type', 'text/xml');
-    }
-
-    public function categorias()
-    {
-        $startOfMonth = Carbon::now()->startOfMonth()->format('c');
-
-        $categorias = Categoria::all();
-        return response()->view('frontend.sitemap.categorias', [
-            'categorias' => $categorias,
-            'startOfMonth' => $startOfMonth
-        ])->header('Content-Type', 'text/xml');
-    }
-
-    public function productos()
-    {
-        $startOfMonth = Carbon::now()->startOfMonth()->format('c');
-
-        $productos = Producte::all();
-        return response()->view('frontend.sitemap.productos', [
-            'productos' => $productos,
             'startOfMonth' => $startOfMonth
         ])->header('Content-Type', 'text/xml');
     }
