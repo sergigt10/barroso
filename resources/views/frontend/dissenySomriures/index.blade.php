@@ -40,7 +40,7 @@
                         <img src="{{ asset('frontend/img/somriures/foto-2-a.jpg') }}" alt="Clínica Barroso"/>
                         <img src="{{ asset('frontend/img/somriures/foto-2-b.jpg') }}" alt="Clínica Barroso"/>
                     </div>
-                    <span><strong>Cas 2.</strong> Rehabilitació oral total de pacient bruxista amb fundes ceràmiques i implants dentals.</span>
+                    <span><strong>Cas 2.</strong> Correcció del somriure invertit amb laminats ceràmics.</span>
                 </div>
             </div>
             <br>
@@ -50,14 +50,14 @@
                         <img src="{{ asset('frontend/img/somriures/foto-4-a.jpg') }}" alt="Clínica Barroso"/>
                         <img src="{{ asset('frontend/img/somriures/foto-4-b.jpg') }}" alt="Clínica Barroso"/>
                     </div>
-                    <span><strong>Cas 3.</strong>  Rehabilitació oral total amb pròtesis fixes sobre implants dentals.</span>
+                    <span><strong>Cas 3.</strong>  Tractament d'ortodòncia de pacient amb un apinyament dental sever.</span>
                 </div>
                 <div class="col-md-6">
                     <div class="beforeAfter">
                         <img src="{{ asset('frontend/img/somriures/foto-3-a.jpg') }}" alt="Clínica Barroso"/>
                         <img src="{{ asset('frontend/img/somriures/foto-3-b.jpg') }}" alt="Clínica Barroso"/>
                     </div>
-                    <span><strong>Cas 4.</strong>  Rehabilitació estètica després de fractures dentals per un traumatisme.</span>
+                    <span><strong>Cas 4.</strong>  Rehabilitació oral total amb pròtesis fixes sobre implants dentals.</span>
                 </div>
             </div>
         </div>

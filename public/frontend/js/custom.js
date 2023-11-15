@@ -53,10 +53,10 @@ $(function () {
             logo = $(".navbar .logo> img");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', '//localhost:3000/frontend/img/logo-ca.svg');
+            logo.attr('src', 'http://www.clinicabarroso.com/frontend/img/logo-ca.svg');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', '//localhost:3000/frontend/img/logo-cat-blanc.svg');
+            logo.attr('src', 'http://www.clinicabarroso.com/frontend/img/logo-cat-blanc.svg');
         }
     });
     

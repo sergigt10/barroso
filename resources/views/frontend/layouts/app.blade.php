@@ -30,17 +30,25 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Logo -->
-                <div class="logo-wrapper navbar-brand valign">
-                    <a href="{{ route('frontend.inici.index') }}">
-                        <div class="logo">
-                            <img src="{{ asset('frontend/img/logo-cat-blanc.svg') }}" class="logo-img" alt="Clínica Barroso">
-                        </div>
-                    </a>
-                </div>
+                @if ( url()->current() === 'http://127.0.0.1:8000/'.Config::get('app.locale').'/contacte' )
+                    
+                @else
+                    <div class="logo-wrapper navbar-brand valign">
+                        <a href="{{ route('frontend.inici.index') }}">
+                            <div class="logo">
+                                <img src="{{ asset('frontend/img/logo-cat-blanc.svg') }}" class="logo-img" alt="Clínica Barroso">
+                            </div>
+                        </a>
+                    </div>
+                @endif
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span> </button>
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
+                        @if ( url()->current() === 'http://127.0.0.1:8000/'.Config::get('app.locale').'/contacte' )
+                            <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">INCI</a></li>
+                        @endif
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.nosaltres.index') }}">NOSALTRES</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.clinica.index') }}">CLÍNICA</a></li>
                         <li class="nav-item dropdown"> 
@@ -48,13 +56,12 @@
                                 TRACTAMENTS <i class="ti-angle-down"></i>
                             </span>
                             <ul class="dropdown-menu last">
-                                <li class="dropdown-item"><a href="#">ORTODONCIA</a></li>
-                                <li class="dropdown-item"><a href="#">PERIODONCIA</a></li>
-                                <li class="dropdown-item"><a href="#">IMPLANTOLOGÍA</a></li>
-                                <li class="dropdown-item"><a href="#">CIRURGÍA ORAL</a></li>
-                                <li class="dropdown-item"><a href="#">ESTÉTICA DENTAL</a></li>
-                                <li class="dropdown-item"><a href="#">ENDODONCIA</a></li>
-                                <li class="dropdown-item"><a href="#">CIRURGÍA ORAL</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.ortodoncia.index') }}">ORTODONCIA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.periodoncia.index') }}">PERIODONCIA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.implantologia.index') }}">IMPLANTOLOGÍA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.endodoncia.index') }}">PRÒTESI I ESTÈTICA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.endodoncia.index') }}">ENDODÒNCIA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.odontopediatria.index') }}">ODONTOPEDIATRIA</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.testimonials.index') }}">TESTIMONIALS</a></li>
@@ -74,7 +81,7 @@
                             <div class="footer-column footer-about">
                                 <h3 class="footer-title">Horaris</h3>
                                 <p class="footer-about-text">
-                                    De dilluns a dijous<br>Matins: 9:30h a 13:30h<br>Tardes: 16:00h a 20:00h
+                                    De dilluns a dijous<br>Matins: 9:30h a 13:30h<br>Tardes: 16:00h a 20:00h<br>Divendres de: 9:30h a 13:30h
                                 </p>
                             </div>
                         </div>

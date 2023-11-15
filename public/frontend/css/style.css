@@ -116,7 +116,7 @@ a:hover {
     color: inherit;
 }
 b {
-    font-weight: 400;
+    font-weight: bold;
     color: #000000;
 }
 
@@ -847,10 +847,10 @@ color: #000000;
     color: #fff;
 }
 .navbar .navbar-nav .nav-link:hover {
-    color: #b7b7b7;
+    color: #000000;
 }
 .navbar .navbar-nav .active {
-    color: #b7b7b7 !important;
+    color: #000000 !important;
 }
 
 
@@ -1094,7 +1094,7 @@ color: #000000;
         padding-left: 0px;
         padding-right: 0px;
         background: transparent;
-        padding-top: 15px;
+        padding-top: 0px;
         padding-bottom: 15px;
     }
     .nav-scroll {
@@ -1909,7 +1909,7 @@ hr {
 }
 
 .banner-header h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     position: relative;
 }
@@ -2046,7 +2046,7 @@ hr {
     }
     
     .banner-header h1 {
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: 0px !important;
     }
 
@@ -5283,6 +5283,18 @@ select {
   opacity: 1;
 }
 
+.width-auto {
+    width: auto;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
 /* ======= Responsive style ======= */
 @media screen and (max-width: 991px) {
     .bg-fixed {
@@ -5381,7 +5393,6 @@ select {
     .header .caption h1 {
         font-size: 40px;
     }
-    
     .video-fullscreen-wrap .booking-box,
     .kenburns-inner .booking-box,
     .banner-header .booking-box {
@@ -5400,13 +5411,22 @@ select {
         padding-bottom: 0px !important;
     }
     .banner-header {
-        height: 25vh;
+        height: 20vh;
     }
     .testimonials {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
     .bg-img-mobile {
         background-size: cover !important;
+    }
+    .width-auto {
+        width: 100%;
+    }
+    .width-90 {
+        width: 100%;
+    }
+    .width-80 {
+        width: 100%;
     }
 }
 @media screen and (max-width: 767px) {
@@ -5419,15 +5439,12 @@ select {
         letter-spacing: 10px;
         line-height: 1.35em;
     }
-    
     .header .caption h3 {
     font-size: 30px;
     margin-bottom: 15px;
     letter-spacing: 10px;
     line-height: 1.35em;
     }
-    
-    
     .header .caption h4 {
         font-size: 12px;
     }
@@ -5464,5 +5481,5 @@ select {
 }
 
 .testimonials {
-    font-size: 34px;
+    font-size: 25px;
 }

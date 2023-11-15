@@ -12,19 +12,15 @@
     <section class="pricing section-padding bg-black">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="section-title"><span>Qui som</span></div>
                     <p class="color-2">
-                        Som una clínica dental amb una llarga tradició familiar, ubicada a Girona des de l'any 1949. L'equip multidisciplinari de dentistes especialitzats format en la seva majoria per a professors universitaris està dirigit per la tercera generació d'odontòlegs de la família Barroso.<br><br> L'autoexigència i el compromís en cada tractament, i la confiança depositada per a milers de pacients durant més de 70 anys d'activitat, la converteix en una clínica dental de referència a Girona.
+                        Som una clínica dental amb una llarga tradició familiar, ubicada a Girona des de l'any 1949.<br><br> L'equip multidisciplinari de dentistes especialitzats format en la seva majoria per a professors universitaris està dirigit per la tercera generació d'odontòlegs de la família Barroso.<br><br> L'autoexigència i el compromís en cada tractament, i la confiança depositada per a milers de pacients durant més de 70 anys d'activitat, la converteix en una clínica dental de referència a Girona.
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 text-center">
                     <br>
-                    <img src="{{ asset('frontend/img/nosaltres.jpg') }}" alt="Clínica Barroso"><br>
-                    <div style="float:center;" class="slide">
-                        <h4 style="color: white;">Dr. Enric Barroso Baixeríes </h4>
-                        <p style="color: white;">( 1923-2000 )</p>
-                    </div>
+                    <img src="{{ asset('frontend/img/nosaltres.jpg') }}" alt="Clínica Barroso">
                 </div>
             </div>
         </div>
@@ -77,7 +73,7 @@
                                         DRA. CRISTINA BARROSO
                                     </h5>
                                     <div class="line" style="color: white;">
-                                        ORTODONCIA Y ODONTOPEDIATRIA
+                                        ORTODONCIA I ODONTOPEDIATRIA
                                     </div>
                                 </div>
                             </a>

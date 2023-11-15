@@ -20,12 +20,21 @@ class SitemapController extends Controller
             '',
             'nosaltres',
             'clinica-dental-girona',
+            'ortodoncia-girona',
+            'periodoncia-girona',
+            'implantologia-girona',
+            'protesis-dental-girona',
+            'endodoncia-girona',
+            'odontopediatria-girona',
             'testimonials',
             'contacte',
-            'disseny-somriures',
+            'historia',
             'dentista-girona',
+            'disseny-somriures',
+            'odontologia-avancada-girona',
             'invisalign-girona',
-            'historia'
+            'implants-qualitat',
+            'ortodoncia-i-odontopediatria-girona'
         ];
         return response()->view('frontend.sitemap.statics', [
             'statics' => $statics,

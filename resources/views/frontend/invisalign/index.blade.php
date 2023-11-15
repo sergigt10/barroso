@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="item">
-                        <a href="#">
+                        <a href="{{ route('frontend.ortodonciaOdontopediatria.index') }}">
                             <div class="img"><img src="{{ asset('frontend/img/cristina.jpg') }}" alt="Clínica Barroso"></div>
                             <div class="info">
                                 <h6>DRA. CRISTINA BARROSO PANELLA</h6>

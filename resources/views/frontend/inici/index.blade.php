@@ -134,13 +134,13 @@
                             <div class="info"></div>
                             <h4>Odontologia avançada</h4>
                             <p>Buscant l'excel·lència en cada tractament.</p>
-                            <div class="butn-dark"> <a href="#"><span>Veure més </span></a> </div>
+                            <div class="butn-dark"> <a href="{{ route('frontend.odontologia.index') }}"><span>Veure més </span></a> </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
                     <div class="img">
-                        <a href="#"><img src="{{ asset('frontend/img/odo.jpg') }}" alt="Clínica Barroso"></a>
+                        <a href="{{ route('frontend.odontologia.index') }}"><img src="{{ asset('frontend/img/odo.jpg') }}" alt="Clínica Barroso"></a>
                     </div>
                 </div>
             </div>
