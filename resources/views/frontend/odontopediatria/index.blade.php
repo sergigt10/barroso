@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="section-title"><span>Quan recomanem la primera visita amb l'odontopediatria?</span></div>
+                    <div class="section-title"><span>Quan recomanem la primera visita amb l'odontopediatra?</span></div>
                     <p class="color-2">Recomanem la primera visita al voltant de l'any de vida, quan ja han erupcionat les primeres dents de llet. Durant aquesta primera visita donem les pautes als pares i mares de com mantenir una bona salut bucal i higiene de les dents del nadó. És molt important realizar controls periòdics per tal de prevenir càries o altres patologies en un futur. D'aquesta manera també aconseguim una rutina per tal de que el nen/a es familiaritzi amb nosalres i perdi l'ansietat de venir al dentista.</p>
                     <div class="reservations mb-30">
                     </div>

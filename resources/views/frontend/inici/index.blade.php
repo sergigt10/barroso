@@ -43,7 +43,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tú</h3>
+                                <h3>Una clínica dental pensada per a tu</h3>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tú</h3>
+                                <h3>Una clínica dental pensada per a tu</h3>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                         <div class="cont text-left">
                             <div class="info"></div>
                             <h4>Odontologia avançada</h4>
-                            <p>Buscant l'excel·lència en cada tractament.</p>
+                            <p>Buscant l'excel.lència en cada tractament.</p>
                             <div class="butn-dark"> <a href="{{ route('frontend.odontologia.index') }}"><span>Veure més </span></a> </div>
                         </div>
                     </div>

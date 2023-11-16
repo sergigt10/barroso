@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-md-12 mb-30">
                     <h5>Compromesos amb la qualitat</h5>
-                    Apostem per a fer tractaments de qualitat. No prioritzem la quantitat de tractaments fets a la clínica. La ètica professional i les expectatives de cada pacient son les nostres prioritats.
+                    Apostem per a fer tractaments de qualitat. No prioritzem la quantitat de tractaments fets a la clínica. L'ètica professional i les expectatives de cada pacient són les nostres prioritats.
                 </div>
                 <div class="col-md-12 mb-30">
                     <h5>Una clínica moderna</h5>

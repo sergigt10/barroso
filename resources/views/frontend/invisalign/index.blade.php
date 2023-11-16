@@ -32,7 +32,7 @@
                             <div class="img"><img src="{{ asset('frontend/img/cristina.jpg') }}" alt="Clínica Barroso"></div>
                             <div class="info">
                                 <h6>DRA. CRISTINA BARROSO PANELLA</h6>
-                                <p>ORTODONCIA I ODONTOPEDIATRIA</p>
+                                <p>ORTODÒNCIA</p>
                             </div>
                         </a>
                     </div>

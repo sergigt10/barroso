@@ -15,8 +15,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color-2">És l'especialitat que té com a finalitat la correcció de la posició de les dents i el control del creixement dels maxil•lars amb l'objectiu d'aconseguir no solzament una correcta alineació dental, si no també restablir l'equilibri funcional de la boca i millorar l'harmonia facial.</p>
-                    <p class="color-2">Abans d'iniciar el tractament ortodòntic, realitzem un estudi dels problemes funcionals, dentals i estètics del pacient. l'estudi d' ortodòncia és imprescindible per poder oferir el millor pla de tractament individualitzat. L'ortodoncista ha de dedicar temps i recursos per analitzar cada cas i obtenir un diagnòstic complet. Els registres que utilitzem són:</p>
+                    <p class="color-2">És l'especialitat que té com a finalitat la correcció de la posició de les dents i el control del creixement dels maxil•lars amb l'objectiu d'aconseguir no només una correcta alineació dental, si no també restablir l'equilibri funcional de la boca i millorar l'harmonia facial.</p>
+                    <p class="color-2">Abans d'iniciar el tractament ortodòntic, realitzem un estudi dels problemes funcionals, dentals i estètics del pacient. L'estudi d' ortodòncia és imprescindible per poder oferir el millor pla de tractament individualitzat. L'ortodoncista ha de dedicar temps i recursos per analitzar cada cas i obtenir un diagnòstic complet. Els registres que utilitzem són:</p>
                     <p class="color-2">
                         - Fotografies intraorals<br>
                         - Fotografies frontal i de perfil (en repòs i somriure natural)<br>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-12 mt-30">
                     <p class="color-4">
-                        Les grans avantatges de l'ortodòncia infantil són:<br>
+                        Els grans avantatges de l'ortodòncia infantil són:<br>
                         · Millorar la malposició de les dents evitant tractaments més complexes i més llargs en un futur<br>
                         · Afavorir un correcte creixement simètric dels maxil.lars<br>
                         · Millorar la respiració del nen/a en els casos on realitzem una expansió del paladar<br>

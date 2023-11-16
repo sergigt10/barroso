@@ -30,9 +30,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Logo -->
-                @if ( url()->current() === 'http://127.0.0.1:8000/'.Config::get('app.locale').'/contacte' )
-                    
-                @else
+                @if ( url()->current() !== 'http://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
                     <div class="logo-wrapper navbar-brand valign">
                         <a href="{{ route('frontend.inici.index') }}">
                             <div class="logo">
@@ -46,7 +44,7 @@
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        @if ( url()->current() === 'http://127.0.0.1:8000/'.Config::get('app.locale').'/contacte' )
+                        @if ( url()->current() === 'http://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
                             <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">INCI</a></li>
                         @endif
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.nosaltres.index') }}">NOSALTRES</a></li>
@@ -56,16 +54,30 @@
                                 TRACTAMENTS <i class="ti-angle-down"></i>
                             </span>
                             <ul class="dropdown-menu last">
-                                <li class="dropdown-item"><a href="{{ route('frontend.ortodoncia.index') }}">ORTODONCIA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.periodoncia.index') }}">PERIODONCIA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.ortodoncia.index') }}">ORTODÒNCIA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.periodoncia.index') }}">PERIODÒNCIA</a></li>
                                 <li class="dropdown-item"><a href="{{ route('frontend.implantologia.index') }}">IMPLANTOLOGÍA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.endodoncia.index') }}">PRÒTESI I ESTÈTICA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.protesis.index') }}">PRÒTESI I ESTÈTICA</a></li>
                                 <li class="dropdown-item"><a href="{{ route('frontend.endodoncia.index') }}">ENDODÒNCIA</a></li>
                                 <li class="dropdown-item"><a href="{{ route('frontend.odontopediatria.index') }}">ODONTOPEDIATRIA</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.testimonials.index') }}">TESTIMONIALS</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.contacte.index') }}">CONTACTE</a></li>
+                        <li class="nav-item dropdown"> 
+                            <span class="nav-link"> {{ LaravelLocalization::getCurrentLocale() }} <i class="ti-angle-down"></i></span>
+                            <ul class="dropdown-menu last">
+                                {{-- @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                    <li class="dropdown-item">
+                                        <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                            {{ $properties['native'] }}
+                                        </a>
+                                    </li>
+                                @endforeach --}}
+                                <li class="dropdown-item"><a href="#">Español</a></li>
+                                <li class="dropdown-item"><a href="#">English</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -152,7 +164,7 @@
                 background-color: transparent;
             }
         </style>
-        <button onclick="topFunction()" id="myBtn" title="WhatsApp"><img src="{{ asset('frontend/img/whats.png') }}"></button>
+        <button onclick="topFunction()" id="myBtn" title="WhatsApp Clínica dental Barroso"><img src="{{ asset('frontend/img/whats.png') }}"></button>
         <script>
             //Get the button
             var mybutton = document.getElementById("myBtn");

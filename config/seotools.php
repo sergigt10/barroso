@@ -13,7 +13,7 @@ return [
             'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
             'description'  => "Benvinguts a Clínica Dental Barroso des de l'any 1949 hem estat vetllant per la seva salut dental i avuí dia seguim amb la mateixa il·lusió amb la qual vam començar.", // set false to total remove
             'separator'    => ', ',
-            'keywords'     => ['Clínica Barroso', 'Implants Girona', 'clínica dental Girona', 'protesis-dental-girona', 'endodoncia girona', 'ortodoncia girona', 'Odontopediatria girona', 'periodoncia girona', 'implants girona', 'protesis girona', 'dentista girona', 'clinica dental girona'],
+            'keywords'     => ['Clínica Barroso', 'Implants Girona', 'clínica dental Girona', 'protesis-dental-girona', 'endodoncia girona', 'ortodoncia girona', 'Odontopediatria girona', 'periodòncia girona', 'implants girona', 'protesis girona', 'dentista girona', 'clinica dental girona'],
             'canonical'    => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots'       => 'all', // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],

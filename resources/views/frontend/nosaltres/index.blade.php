@@ -73,7 +73,7 @@
                                         DRA. CRISTINA BARROSO
                                     </h5>
                                     <div class="line" style="color: white;">
-                                        ORTODONCIA I ODONTOPEDIATRIA
+                                        ORTODÒNCIA I ODONTOPEDIATRIA
                                     </div>
                                 </div>
                             </a>
