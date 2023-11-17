@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-subtitle">Les nostres instal·lacions</div>
+                    <div class="section-subtitle">Les nostres instal.lacions</div>
                     <div class="section-title">La clínica</div>
                 </div>
                 <!-- 3 columns -->

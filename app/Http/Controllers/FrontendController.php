@@ -11,6 +11,7 @@ class FrontendController extends Controller
     public function index()
     {
         SEOTools::setTitle('Clínica Barroso, Implants Girona, Clínica dental Girona');
+        SEOTools::setDescription("Clínica dental Barroso Girona experts en ortodòncia i odontopediatria, implantologia i rehabilitació oral, estètica dental, endodòncia i periodòncia.");
 
         return view('frontend.inici.index');
     }

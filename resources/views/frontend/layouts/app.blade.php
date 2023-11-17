@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Logo -->
-                @if ( url()->current() !== 'http://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
+                @if ( url()->current() !== 'https://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
                     <div class="logo-wrapper navbar-brand valign">
                         <a href="{{ route('frontend.inici.index') }}">
                             <div class="logo">
@@ -44,7 +44,7 @@
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        @if ( url()->current() === 'http://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
+                        @if ( url()->current() === 'https://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
                             <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">INCI</a></li>
                         @endif
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.nosaltres.index') }}">NOSALTRES</a></li>

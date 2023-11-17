@@ -55,6 +55,17 @@
         <!-- Mobile version -->
         <div class="owl-carousel owl-theme mobile-show" style="display: none;">
             <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{ asset('frontend/img/slider/2-mobile.jpg') }}">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                <h3>A Girona des de 1949</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/4.jpg') }}">
                 <div class="v-middle caption">
                     <div class="container">
@@ -66,7 +77,18 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/slide-2.jpg') }}">
+            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{ asset('frontend/img/slider/3-mobile.jpg') }}">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                <h3>A l'avantguarda<br> de la innovació</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/slide-2-mobile.jpg') }}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
