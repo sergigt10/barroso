@@ -45,7 +45,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         @if ( url()->current() === 'https://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
-                            <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">INCI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">INICI</a></li>
                         @endif
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.nosaltres.index') }}">NOSALTRES</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('frontend.clinica.index') }}">CLÍNICA</a></li>
