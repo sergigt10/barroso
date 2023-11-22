@@ -45,37 +45,37 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         @if ( url()->current() === 'https://www.clinicabarroso.com/'.Config::get('app.locale').'/contacte' )
-                            <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">INICI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('frontend.inici.index') }}">@lang("INICI")</a></li>
                         @endif
-                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.nosaltres.index') }}">NOSALTRES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.clinica.index') }}">CLÍNICA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.nosaltres.index') }}">@lang("NOSALTRES")</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.clinica.index') }}">@lang("CLÍNICA")</a></li>
                         <li class="nav-item dropdown"> 
                             <span class="nav-link"> 
-                                TRACTAMENTS <i class="ti-angle-down"></i>
+                                @lang("TRACTAMENTS") <i class="ti-angle-down"></i>
                             </span>
                             <ul class="dropdown-menu last">
-                                <li class="dropdown-item"><a href="{{ route('frontend.ortodoncia.index') }}">ORTODÒNCIA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.periodoncia.index') }}">PERIODÒNCIA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.implantologia.index') }}">IMPLANTOLOGÍA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.protesis.index') }}">PRÒTESI I ESTÈTICA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.endodoncia.index') }}">ENDODÒNCIA</a></li>
-                                <li class="dropdown-item"><a href="{{ route('frontend.odontopediatria.index') }}">ODONTOPEDIATRIA</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.ortodoncia.index') }}">@lang("ORTODÒNCIA")</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.periodoncia.index') }}">@lang("PERIODÒNCIA")</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.implantologia.index') }}">@lang("IMPLANTOLOGIA")</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.protesis.index') }}">@lang("PRÒTESI I ESTÈTICA")</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.endodoncia.index') }}">@lang("ENDODÒNCIA")</a></li>
+                                <li class="dropdown-item"><a href="{{ route('frontend.odontopediatria.index') }}">@lang("ODONTOPEDIATRIA")</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.testimonials.index') }}">TESTIMONIALS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.contacte.index') }}">CONTACTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.testimonials.index') }}">@lang("TESTIMONIALS")</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('frontend.contacte.index') }}">@lang("CONTACTE")</a></li>
                         <li class="nav-item dropdown"> 
                             <span class="nav-link"> {{ LaravelLocalization::getCurrentLocale() }} <i class="ti-angle-down"></i></span>
                             <ul class="dropdown-menu last">
-                                {{-- @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                     <li class="dropdown-item">
                                         <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                             {{ $properties['native'] }}
                                         </a>
                                     </li>
-                                @endforeach --}}
-                                <li class="dropdown-item"><a href="#">Español</a></li>
-                                <li class="dropdown-item"><a href="#">English</a></li>
+                                @endforeach
+                                {{-- <li class="dropdown-item"><a href="#">Español</a></li>
+                                <li class="dropdown-item"><a href="#">English</a></li> --}}
                             </ul>
                         </li>
                     </ul>
@@ -91,27 +91,27 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="footer-column footer-about">
-                                <h3 class="footer-title">Horaris</h3>
+                                <h3 class="footer-title">@lang("Horaris")</h3>
                                 <p class="footer-about-text">
-                                    De dilluns a dijous<br>Matins: 9:30h a 13:30h<br>Tardes: 16:00h a 20:00h<br>Divendres de: 9:30h a 13:30h
+                                    @lang("De dilluns a dijous<br>Matins: 9:30h a 13:30h<br>Tardes: 16:00h a 20:00h<br>Divendres de: 9:30h a 13:30h")
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-3 offset-md-1">
                             <div class="footer-column footer-explore clearfix">
-                                <h3 class="footer-title">Menú</h3>
+                                <h3 class="footer-title">@lang("Menú")</h3>
                                 <ul class="footer-explore-list list-unstyled">
-                                    <li><a href="{{ route('frontend.inici.index') }}">Inici</a></li>
-                                    <li><a href="{{ route('frontend.nosaltres.index') }}">Nosaltres</a></li>
-                                    <li><a href="{{ route('frontend.clinica.index') }}">La clínica</a></li>
-                                    <li><a href="{{ route('frontend.testimonials.index') }}">Testimonials</a></li>
-                                    <li><a href="{{ route('frontend.contacte.index') }}">Contacte</a></li>
+                                    <li><a href="{{ route('frontend.inici.index') }}">@lang("Inici")</a></li>
+                                    <li><a href="{{ route('frontend.nosaltres.index') }}">@lang("Nosaltres")</a></li>
+                                    <li><a href="{{ route('frontend.clinica.index') }}">@lang("La clínica")</a></li>
+                                    <li><a href="{{ route('frontend.testimonials.index') }}">@lang("Testimonials")</a></li>
+                                    <li><a href="{{ route('frontend.contacte.index') }}">@lang("Contacte")</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="footer-column footer-contact">
-                                <h3 class="footer-title">Contacte</h3>
+                                <h3 class="footer-title">@lang("Contacte")</h3>
                                 <p class="footer-contact-text">Pujada Creu de Palau, 11-13<br>17003-Girona</p>
                                 <div class="footer-contact-info">
                                     <p class="footer-contact-phone">
@@ -122,7 +122,7 @@
                                     </p>
                                 </div>
                                 <div class="footer-about-social-list">
-                                    <a href="https://www.instagram.com/clinicabarroso/"><i class="ti-instagram"></i></a>
+                                    <a href="https://www.instagram.com/clinicabarroso/" target="_blank"><i class="ti-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -206,6 +206,8 @@
         <script src="{{ asset('frontend/js/custom.js') }}"></script>
 
         @yield('scripts')
+
+        <script type='application/ld+json'>{"@context":"http://schema.org","@type":"Organization","url":"https://www.clinicabarroso.com/","sameAs":["https://www.instagram.com/clinicabarroso/"],"@id":"#organization","name":"Clínica Dental Barroso","logo":"https://www.clinicabarroso.com/frontend/img/clinica-dental-girona.jpg"}</script>
 
     </body>
 </html>

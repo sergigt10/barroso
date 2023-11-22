@@ -31,6 +31,7 @@ Route::group(
         Route::get('/testimonials', 'FrontendController@testimonials')->name('frontend.testimonials.index');
         /* Contacte */
         Route::get('/contacte', 'FrontendController@contacte')->name('frontend.contacte.index');
+        Route::post('/contacte/enviat', 'FrontendController@sendEmail')->name('frontend.sendMail');
         /* Historia */
         Route::get('/historia', 'FrontendController@historia')->name('frontend.historia.index');
         /* Dentista Girona */

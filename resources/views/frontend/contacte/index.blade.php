@@ -19,56 +19,57 @@
         <div class="container">
             <div class="row mb-90">
                 <div class="col-md-6 mb-60">
-                    <h3>Contacti amb nosaltres</h3>
-                    <p>Si desitja contactar amb nosaltres per a qualsevol comentari, consulta o sol·licitud, li posem a disposició i un formulari de contacte per poder escriure'ns quan vostè ho necessiti.</p>
+                    <h3>@lang("Contacti amb nosaltres")</h3>
+                    <p>@lang("Si desitja contactar amb nosaltres per a qualsevol comentari, consulta o sol·licitud, li posem a disposició i un formulari de contacte per poder escriure'ns quan vostè ho necessiti.")</p>
                     <div class="reservations mb-30">
                         <div class="icon"><span class="flaticon-call"></span></div>
                         <div class="text">
-                            <p>Telèfon</p> <a href="tel:972208901">972 208 901</a>
+                            <p>@lang("Telèfon")</p> <a href="tel:972208901">972 208 901</a>
                         </div>
                     </div>
                     <div class="reservations mb-30">
                         <div class="icon"><span class="flaticon-envelope"></span></div>
                         <div class="text">
-                            <p>Correu electrònic</p> <a href="mailto:info@clinicabarroso.com">info@clinicabarroso.com</a>
+                            <p>@lang("Correu electrònic")</p> <a href="mailto:info@clinicabarroso.com">info@clinicabarroso.com</a>
                         </div>
                     </div>
                     <div class="reservations">
                         <div class="icon"><span class="flaticon-location-pin"></span></div>
                         <div class="text">
-                            <p>Direcció</p> Pujada Creu de Palau, 11-13 
+                            <p>@lang("Direcció")</p> Pujada Creu de Palau, 11-13 
                             <br>17003-Girona
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5 mb-30 offset-md-1">
-                    <h3>Formulari de contacte</h3>
-                    <form method="post" class="contact__form" action="mail.php">
+                    <h3>@lang("Formulari de contacte")</h3>
+                    <form method="post" action="{{ route('frontend.sendMail') }}" method="post">
+                        @csrf
                         <!-- form message -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="alert alert-success contact__msg" style="display: none" role="alert"> El vostre missatge s'ha enviat correctament </div>
+                        @if(session('message_mail'))
+                            <div class="alert alert-success contact__msg" role="alert">
+                                <b>{{ session('message_mail') }}</b>
                             </div>
-                        </div>
+                        @endif
                         <!-- form elements -->
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input name="name" type="text" placeholder="Nom i cognoms *" required>
+                                <input name="name" type="text" placeholder="@lang("Nom i cognoms *")" required>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input name="email" type="email" placeholder="Correu electrònic *" required>
+                                <input name="email" type="email" placeholder="@lang("Correu electrònic *")" required>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input name="phone" type="text" placeholder="Telèfon *" required>
+                                <input name="phone" type="text" placeholder="@lang("Telèfon *")" required>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input name="subject" type="text" placeholder="Població *" required>
+                                <input name="poblacio" type="text" placeholder="@lang("Població *")" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <textarea name="message" id="message" cols="30" rows="4" placeholder="Missatge *" required></textarea>
+                                <textarea name="message" id="message" cols="30" rows="4" placeholder="@lang("Missatge *")" required></textarea>
                             </div>
                             <div class="col-md-12">
-                                <button class="butn-dark"><a href="#0"><span>Enviar</span></a></button>
+                                <button class="butn-dark" type="submit"><a style="color:#FFF"><span>@lang("Enviar")</span></a></button>
                             </div>
                         </div>
                     </form>
@@ -76,7 +77,7 @@
             </div>
             <div class="row mb-60">
                 <div class="col-md-12 text-center">
-                    <h3>Mútues adherides</h3>
+                    <h3>@lang("Mútues adherides")</h3>
                 </div>
                 <div class="col-md-12 text-center">
                     <img src="{{ asset('frontend/img/mutues.png') }}" class="width-auto">
@@ -84,27 +85,27 @@
             </div>
             <div class="row mb-60">
                 <div class="col-md-12">
-                    <h3>Per què Clínica Barroso és la teva clínica dental de confiança a Girona?</h3>
+                    <h3>@lang("Per què Clínica Barroso és la teva clínica dental de confiança a Girona?")</h3>
                 </div>
                 <div class="col-md-12 mb-30">
-                    <h5>Compromesos amb la qualitat</h5>
-                    Apostem per a fer tractaments de qualitat. No prioritzem la quantitat de tractaments fets a la clínica. L'ètica professional i les expectatives de cada pacient són les nostres prioritats.
+                    <h5>@lang("Compromesos amb la qualitat")</h5>
+                    @lang("Apostem per a fer tractaments de qualitat. No prioritzem la quantitat de tractaments fets a la clínica. L'ètica professional i les expectatives de cada pacient són les nostres prioritats.")
                 </div>
                 <div class="col-md-12 mb-30">
-                    <h5>Una clínica moderna</h5>
-                    L'odontologia digital i el concepte de dentista digital és relativament nou. A Clínica Barroso emprarem la tecnologia puntera disponible sempre que ens aporti avantatges en la realització del diagnòstic i del propi tractament. La digitalització de molts dels procediments amb l'ús dels escàners intraorals, softwares de planificació o la radiologia digital ens permetrà realitzar tractaments menys invasius, millorant significativament l'experiència del pacient.
+                    <h5>@lang("Una clínica moderna")</h5>
+                    @lang("L'odontologia digital i el concepte de dentista digital és relativament nou. A Clínica Barroso emprarem la tecnologia puntera disponible sempre que ens aporti avantatges en la realització del diagnòstic i del propi tractament. La digitalització de molts dels procediments amb l'ús dels escàners intraorals, softwares de planificació o la radiologia digital ens permetrà realitzar tractaments menys invasius, millorant significativament l'experiència del pacient.")
                 </div>
                 <div class="col-md-12 mb-30">
-                    <h5>Equip altament qualificat i especialitzat</h5>
-                    En l'equip de Clínica Barroso comptem amb professionals altament especialitzats en les diferents branques de l'odontologia. A part de grans professionals el pacient podrà comprovar en cada visita la seva qualitat humana i el tracte proper.
+                    <h5>@lang("Equip altament qualificat i especialitzat")</h5>
+                    @lang("En l'equip de Clínica Barroso comptem amb professionals altament especialitzats en les diferents branques de l'odontologia. A part de grans professionals el pacient podrà comprovar en cada visita la seva qualitat humana i el tracte proper.")
                 </div>
                 <div class="col-md-12 mb-30">
-                    <h5>Fàcil accessibilitat</h5>
-                    Ubicats al centre de Girona, al barri dels Químics, on tindràs facilitat d'aparcarcament gratuït. En cas d'utilitzar transport públic també podràs utilitzar les línies del bus urbà.
+                    <h5>@lang("Fàcil accessibilitat")</h5>
+                    @lang("Ubicats al centre de Girona, al barri dels Químics, on tindràs facilitat d'aparcarcament gratuït. En cas d'utilitzar transport públic també podràs utilitzar les línies del bus urbà.")
                 </div>
                 <div class="col-md-12">
-                    <h5>Finançament a mida</h5>
-                    Posem a la disposició dels nostres pacients diverses alternatives de finançament personalitzades perquè el factor econòmic no suposi un obstacle a l'hora d'aconseguir una bona salut i estètica dental.
+                    <h5>@lang("Finançament a mida")</h5>
+                    @lang("Posem a la disposició dels nostres pacients diverses alternatives de finançament personalitzades perquè el factor econòmic no suposi un obstacle a l'hora d'aconseguir una bona salut i estètica dental.")
                 </div>
             </div>
             <!-- Map Section -->

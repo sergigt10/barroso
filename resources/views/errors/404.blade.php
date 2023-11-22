@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row text-center mb-30">
                     <div class="col-md-12">
-                        <h2>PÀGINA NO DISPONIBLE</h2>
+                        <h2>@lang("PÀGINA NO DISPONIBLE")</h2>
                     </div>
                 </div>
                 <div class="row mb-30">
@@ -18,7 +18,7 @@
                     <div class="go-back col-md-12">
                         <a href='{{ route('frontend.inici.index') }}'> 
                             <span><i class="ti-arrow-left" aria-hidden="true"></i></span>
-                            &nbsp; Tornar a la pàgina d'inici 
+                            &nbsp; @lang("Tornar a la pàgina d'inici")
                         </a>
                     </div>
                 </div>

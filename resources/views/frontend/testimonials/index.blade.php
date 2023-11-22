@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left caption mt-90">
-                    <h5>Clínica Barroso, una experiència diferent</h5>
-                    <h1>Testimonials</h1>
+                    <h5>@lang("Clínica Barroso, una experiència diferent")</h5>
+                    <h1>@lang("Testimonials")</h1>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-10 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                    <div class="section-title testimonials">Anar al dentista pot suposar una experiència poc agradable per a moltes persones. Donem molta importància a que puguis sentir-te còmode, relaxat i confiat durant tot el tractament. Som especialistes en tècniques mínimament invasives, que milloraran en moltes ocasions la teva experiència.</div>
+                    <div class="section-title testimonials">@lang("Anar al dentista pot suposar una experiència poc agradable per a moltes persones. Donem molta importància a que puguis sentir-te còmode, relaxat i confiat durant tot el tractament. Som especialistes en tècniques mínimament invasives, que milloraran en moltes ocasions la teva experiència.")</div>
                 </div>
             </div>
         </div>
@@ -27,8 +27,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-subtitle">Què opinen</div>
-                    <div class="section-title">ELS NOSTRES PACIENTS?</div>
+                    <div class="section-subtitle">@lang("Què opinen")</div>
+                    <div class="section-title">@lang("ELS NOSTRES PACIENTS?")</div>
                 </div>
                 <div class="col-md-6">
                     <div class="vid-area mb-30">

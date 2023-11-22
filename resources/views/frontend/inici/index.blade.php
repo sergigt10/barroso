@@ -10,7 +10,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>A Girona des de 1949</h3>
+                                <h3>@lang("A Girona des de 1949")</h3>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>Especialistes en ortodòncia, <br>implants i estètica</h3>
+                                <h3>@lang("Especialistes en ortodòncia, <br>implants i estètica")</h3>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>A l'avantguarda de la innovació</h3>
+                                <h3>@lang("A l'avantguarda de la innovació")</h3>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tu</h3>
+                                <h3>@lang("Una clínica dental pensada per a tu")</h3>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>A Girona des de 1949</h3>
+                                <h3>@lang("A Girona des de 1949")</h3>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>Especialistes en ortodòncia, <br>implants i estètica</h3>
+                                <h3>@lang("Especialistes en ortodòncia, <br>implants i estètica")</h3>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>A l'avantguarda<br> de la innovació</h3>
+                                <h3>@lang("A l'avantguarda<br> de la innovació")</h3>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h3>Una clínica dental pensada per a tu</h3>
+                                <h3>@lang("Una clínica dental pensada per a tu")</h3>
                             </div>
                         </div>
                     </div>
@@ -109,13 +109,13 @@
             <div class="row">
                 <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
                     <div class="section-subtitle"></div>
-                    <div class="section-title mt-60">Un equip centrat en tu</div>
-                    <p>Clínica Barroso posa a disposició un equip multidisciplinar experts en ortodòncia i odontopediatria, implantologia i rehabilitació oral, estètica dental, endodòncia i periodòncia amb els coneixements més actualitzats per a que la teva experiència sigui la millor possible.</p>
-                    <p>Cada cas serà tractat de manera individualitzada, buscant un tractament “fet a mida” per a cada situació particular.</p>
+                    <div class="section-title mt-60">@lang("Un equip centrat en tu")</div>
+                    <p>@lang("Clínica Barroso posa a disposició un equip multidisciplinar experts en ortodòncia i odontopediatria, implantologia i rehabilitació oral, estètica dental, endodòncia i periodòncia amb els coneixements més actualitzats per a que la teva experiència sigui la millor possible.")</p>
+                    <p>@lang("Cada cas serà tractat de manera individualitzada, buscant un tractament “fet a mida” per a cada situació particular.")</p>
                     <div class="reservations">
                         <div class="icon"><span class="flaticon-call"></span></div>
                         <div class="text">
-                            <p>Cita previa</p> <a href="tel:+34972208901">972 208 901</a>
+                            <p>@lang("Cita previa")</p> <a href="tel:+34972208901">972 208 901</a>
                         </div>
                     </div>
                 </div>
@@ -140,10 +140,10 @@
                     <div class="content">
                         <div class="cont text-left">
                             <div class="info"></div>
-                            <h4>Disseny de somriures</h4>
-                            <p>Somriure és un acte instintiu, natural i fins i tot beneficiós per a la salut.</p>
+                            <h4>@lang("Disseny de somriures")</h4>
+                            <p>@lang("Somriure és un acte instintiu, natural i fins i tot beneficiós per a la salut.")</p>
                             <div class="butn-dark"> 
-                                <a href="{{ route('frontend.dissenySomriures.index') }}"><span>Veure més</span></a> 
+                                <a href="{{ route('frontend.dissenySomriures.index') }}"><span>@lang("Veure més")</span></a> 
                             </div>
                         </div>
                     </div>
@@ -154,9 +154,9 @@
                     <div class="content">
                         <div class="cont text-left">
                             <div class="info"></div>
-                            <h4>Odontologia avançada</h4>
-                            <p>Buscant l'excel.lència en cada tractament.</p>
-                            <div class="butn-dark"> <a href="{{ route('frontend.odontologia.index') }}"><span>Veure més </span></a> </div>
+                            <h4>@lang("Odontologia avançada")</h4>
+                            <p>@lang("Buscant l'excel.lència en cada tractament.")</p>
+                            <div class="butn-dark"> <a href="{{ route('frontend.odontologia.index') }}"><span>@lang("Veure més")</span></a> </div>
                         </div>
                     </div>
                 </div>
@@ -176,10 +176,9 @@
                     <div class="content">
                         <div class="cont text-left">
                             <div class="info"></div>
-                            <h4>Especialistes en ortodòncia, implants i estètica
-                            </h4>
-                            <p>Formació, dedicació, resultats.</p>
-                            <div class="butn-dark"> <a href="{{ route('frontend.dentistaGirona.index') }}"><span>Veure més </span></a> </div>
+                            <h4>@lang("Especialistes en ortodòncia, implants i estètica")</h4>
+                            <p>@lang("Formació, dedicació, resultats.")</p>
+                            <div class="butn-dark"> <a href="{{ route('frontend.dentistaGirona.index') }}"><span>@lang("Veure més")</span></a> </div>
                         </div>
                     </div>
                 </div>
@@ -189,9 +188,9 @@
                     <div class="content">
                         <div class="cont text-left">
                             <div class="info"></div>
-                            <h4>La veu de l'expert</h4>
-                            <p> Innovació i actualització constants.</p>
-                            <div class="butn-dark"> <a href="{{ route('frontend.invisalign.index') }}"><span>Veure més </span></a> </div>
+                            <h4>@lang("La veu de l'expert")</h4>
+                            <p>@lang("Innovació i actualització constants.")</p>
+                            <div class="butn-dark"> <a href="{{ route('frontend.invisalign.index') }}"><span>@lang("Veure més")</span></a> </div>
                         </div>
                     </div>
                 </div>
@@ -210,8 +209,8 @@
                 <div class="col-md-8 offset-md-2 text-center">
                    <br><br><br>
                     <div class="section-subtitle"><span>CLÍNICA BARROSO</span></div>
-                    <div class="section-title"><span>Una clínica dental amb historia</span></div>
-                    <div class="butn-dark"> <a href="{{ route('frontend.historia.index') }}"><span>Veure més </span></a> </div>
+                    <div class="section-title"><span>@lang("Una clínica dental amb historia")</span></div>
+                    <div class="butn-dark"> <a href="{{ route('frontend.historia.index') }}"><span>@lang("Veure més")</span></a> </div>
                 </div>
             </div>  
         </div>

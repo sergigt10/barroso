@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left caption mt-90">
-                    <h1>Especialistes en ortodòncia, implants i estètica</h1>
+                    <h1>@lang("Especialistes en ortodòncia, implants i estètica")</h1>
                 </div>
             </div>
         </div>
@@ -15,8 +15,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color-2">Els doctors Albert i Cristina Barroso, atendran i escoltaran les necessitats de cada pacient durant la primera visita. D'acord amb aquestes es farà una planificació i proposta de tractament coordinat amb la resta de l'equip. </p>
-                    <p class="color-2">La Doctora Cristina Barroso després d'acabar els estudis en odontologia va realitzar formacions complementàries en periodòncia i odontopediatria, i va obtenir l'especialitat en ortodòncia després de 3 anys de dedicació exclusiva en el Màster d'Ortodòncia de la Universitat de Barcelona. Actualment imparteix docència a l'escola d' higienistes del centre d'estudis Aurea i en el Màster d'Odontopediatria de la Universitat de Barcelona.<br><br>El Doctor Albert Barroso després dels estudis de llicenciatura va realitzar una formació exclusiva en cirurgia oral, implants i pròtesi durant dos anys a Barcelona. Posteriorment va obtenir el títol de Doctor en Odontologia “CUM LAUDE” defensant una tesi doctoral generada en un estudi clínic realitzat a la Clínica Barroso, del que s'han derivat diferents publicacions científiques internacionals.*** Actualment i des del 2007 imparteix docència a la Universitat Internacional de Catalunya en el Grau d'Odontologia, el Màster de Cirurgia Oral i en diferents cursos de formació continuada i congressos. </p>
+                    <p class="color-2">@lang("Els doctors Albert i Cristina Barroso, atendran i escoltaran les necessitats de cada pacient durant la primera visita. D'acord amb aquestes es farà una planificació i proposta de tractament coordinat amb la resta de l'equip.")</p>
+                    <p class="color-2">@lang("La Doctora Cristina Barroso després d'acabar els estudis en odontologia va realitzar formacions complementàries en periodòncia i odontopediatria, i va obtenir l'especialitat en ortodòncia després de 3 anys de dedicació exclusiva en el Màster d'Ortodòncia de la Universitat de Barcelona. Actualment imparteix docència a l'escola d'higienistes del centre d'estudis Aurea i en el Màster d'Odontopediatria de la Universitat de Barcelona.<br><br>El Doctor Albert Barroso després dels estudis de llicenciatura va realitzar una formació exclusiva en cirurgia oral, implants i pròtesi durant dos anys a Barcelona. Posteriorment va obtenir el títol de Doctor en Odontologia “CUM LAUDE” defensant una tesi doctoral generada en un estudi clínic realitzat a la Clínica Barroso, del que s'han derivat diferents publicacions científiques internacionals.*** Actualment i des del 2007 imparteix docència a la Universitat Internacional de Catalunya en el Grau d'Odontologia, el Màster de Cirurgia Oral i en diferents cursos de formació continuada i congressos.")</p>
                 </div>
                 <div class="col-md-12">
                     <p class="color-2">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <p>Reposicionament quirúrgic del marge gingival per a millorar l'estètica del somriure.</p>
+                    <p>@lang("Reposicionament quirúrgic del marge gingival per a millorar l'estètica del somriure.")</p>
                 </div>
 
                 <div class="col-md-6">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <p>Modificació de la posició de les dents amb ortodòncia per a donar més amplitud al somriure.</p>
+                    <p>@lang("Modificació de la posició de les dents amb ortodòncia per a donar més amplitud al somriure.")</p>
                 </div>
 
             </div>

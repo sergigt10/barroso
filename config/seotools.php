@@ -42,7 +42,7 @@ return [
             'type'        => 'website',
             'site_name'   => 'Clínica Dental Barroso',
             'locale'      => 'ca_CA',
-            'images'      => ['https://www.clinicabarroso.com/img/clinica-dental-girona.jpg'],
+            'images'      => ['https://www.clinicabarroso.com/frontend/img/clinica-dental-girona.jpg'],
         ],
     ],
     'twitter' => [
@@ -65,7 +65,7 @@ return [
             'description' => "Benvinguts a Clínica Dental Barroso des de l'any 1949 hem estat vetllant per la seva salut dental i avuí dia seguim amb la mateixa il·lusió amb la qual vam començar.", // set false to total remove
             'url'         => 'https://www.clinicabarroso.com', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'WebPage',
-            'images'      => ['https://www.clinicabarroso.com/img/clinica-dental-girona.jpg'],
+            'images'      => ['https://www.clinicabarroso.com/frontend/img/clinica-dental-girona.jpg'],
         ],
     ],
 ];

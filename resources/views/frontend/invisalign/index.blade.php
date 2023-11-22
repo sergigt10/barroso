@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left caption mt-90">
-                    <h1>La veu de l'expert</h1>
+                    <h1>@lang("La veu de l'expert")</h1>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                             <div class="img"> <img src="{{ asset('frontend/img/barroso.jpg') }}" alt="Clínica Barroso"> </div>
                             <div class="info">
                                 <h6>DR. ALBERT BARROSO PANELLA</h6>
-                                <p>CIRURGIA ORAL, IMPLANTS I PRÒTESIS</p>
+                                <p>@lang("CIRURGIA ORAL, IMPLANTS I PRÒTESIS")</p>
                             </div>
                         </a>
                     </div>
@@ -32,7 +32,7 @@
                             <div class="img"><img src="{{ asset('frontend/img/cristina.jpg') }}" alt="Clínica Barroso"></div>
                             <div class="info">
                                 <h6>DRA. CRISTINA BARROSO PANELLA</h6>
-                                <p>ORTODÒNCIA</p>
+                                <p>@lang("ORTODÒNCIA")</p>
                             </div>
                         </a>
                     </div>
