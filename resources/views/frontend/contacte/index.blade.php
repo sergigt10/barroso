@@ -1,5 +1,9 @@
 @extends('frontend.layouts.app')
 
+@section('styles')
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+@endsection
+
 @section('content')
     <!-- Header Banner -->
     <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="{{ asset('frontend/img/contacte.jpg') }}">
@@ -20,7 +24,7 @@
             <div class="row mb-90">
                 <div class="col-md-6 mb-60">
                     <h3>@lang("Contacti amb nosaltres")</h3>
-                    <p>@lang("Si desitja contactar amb nosaltres per a qualsevol comentari, consulta o sol·licitud, li posem a disposició i un formulari de contacte per poder escriure'ns quan vostè ho necessiti.")</p>
+                    <p>@lang("Si desitja contactar amb nosaltres per a qualsevol comentari, consulta o sol·licitud, li posem a disposició un formulari de contacte per poder escriure'ns quan vostè ho necessiti.")</p>
                     <div class="reservations mb-30">
                         <div class="icon"><span class="flaticon-call"></span></div>
                         <div class="text">
@@ -30,7 +34,7 @@
                     <div class="reservations mb-30">
                         <div class="icon"><span class="flaticon-envelope"></span></div>
                         <div class="text">
-                            <p>@lang("Correu electrònic")</p> <a href="mailto:info@clinicabarroso.com">info@clinicabarroso.com</a>
+                            <p>@lang("Correu electrònic")</p> <a href="mailto:consultes@clinicabarroso.com">consultes@clinicabarroso.com</a>
                         </div>
                     </div>
                     <div class="reservations">
@@ -50,6 +54,13 @@
                             <div class="alert alert-success contact__msg" role="alert">
                                 <b>{{ session('message_mail') }}</b>
                             </div>
+                            <br>
+                        @endif
+                        @if(session('error_message_mail'))
+                            <div class="alert alert-danger" role="alert">
+                                {{ session('error_message_mail') }}
+                            </div>
+                            <br>
                         @endif
                         <!-- form elements -->
                         <div class="row">
@@ -68,8 +79,11 @@
                             <div class="col-md-12 form-group">
                                 <textarea name="message" id="message" cols="30" rows="4" placeholder="@lang("Missatge *")" required></textarea>
                             </div>
+                            <div class="col-md-12 form-group">
+                                <div class="g-recaptcha" data-sitekey="6LeBUB8pAAAAAFih_HuF7BoprVwlCJTjkgEsjmkL" data-callback="enableBtn"></div>
+                            </div>
                             <div class="col-md-12">
-                                <button class="butn-dark" type="submit"><a style="color:#FFF"><span>@lang("Enviar")</span></a></button>
+                                <button class="butn-dark" id="submit_details" type="submit" disabled><a style="color:#FFF;cursor: pointer;"><span>@lang("Enviar")</span></a></button>
                             </div>
                         </div>
                     </form>
@@ -116,4 +130,35 @@
             </div>
         </div>
     </section>
+
+    @section('scripts')
+        <script>
+            function enableBtn(){
+                document.getElementById("submit_details").disabled = false;
+            }
+        </script>
+    @endsection
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Business Central",
+            "name": "Clínica Barroso",
+            "image": "https://www.clinicabarroso.com/frontend/img/clinica-dental-girona.jpg",
+            "description": "Clínica dental Barroso Girona experts en ortodòncia i odontopediatria, implantologia i rehabilitació oral, estètica dental, endodòncia i periodòncia.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Pujada Creu de Palau, 11-13",
+                "postalCode": "17003",
+                "addressLocality": "Girona",
+                "addressRegion": "Cataluña",
+                "addressCountry": "España"
+        },
+        "openingHours": [
+            "Mon-Thu 09:30-20:00",
+            "Fr 09:30-13:30"
+        ],
+            "telephone": "+34972208901"
+        }
+    </script>
 @endsection

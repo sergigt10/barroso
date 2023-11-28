@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
         <link rel="stylesheet" href="{{ asset('frontend/css/plugins.css') }}" />
         <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" />
+
+        <!-- estils personalitzats -->
+        @yield('styles')
+
     </head>
     <body>
         <!-- Preloader -->
@@ -34,7 +38,7 @@
                     <div class="logo-wrapper navbar-brand valign">
                         <a href="{{ route('frontend.inici.index') }}">
                             <div class="logo">
-                                <img src="{{ asset('frontend/img/logo-cat-blanc.svg') }}" class="logo-img" alt="Clínica Barroso">
+                                <img src="{{ asset('frontend/img/logo-'.Config::get('app.locale').'-blanc.svg') }}" class="logo-img" alt="Clínica Barroso">
                             </div>
                         </a>
                     </div>
@@ -118,7 +122,7 @@
                                         <span class="flaticon-call"></span> 972 208 901
                                     </p>
                                     <p class="footer-contact-mail">
-                                        info@clinicabarroso.com
+                                        consultes@clinicabarroso.com
                                     </p>
                                 </div>
                                 <div class="footer-about-social-list">
@@ -203,7 +207,8 @@
         <script src="{{ asset('frontend/js/select2.js') }}"></script>
         <script src="{{ asset('frontend/js/datepicker.js') }}"></script>
         <script src="{{ asset('frontend/js/smooth-scroll.min.js') }}"></script>
-        <script src="{{ asset('frontend/js/custom.js') }}"></script>
+        <script src="{{ asset('frontend/js/custom-'.Config::get('app.locale').'.js') }}"></script>
+        
 
         @yield('scripts')
 

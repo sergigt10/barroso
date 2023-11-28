@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/4.jpg') }}">
+            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{{ asset('frontend/img/slider/1.jpg') }}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
@@ -101,10 +101,12 @@
             </div>
         </div>
         <!-- End Mobile version -->
-
+        <div class="arrow bounce text-center">
+            <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
+        </div>
     </header>
     <!-- About -->
-    <section class="about">
+    <section class="about" data-scroll-index="1">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">

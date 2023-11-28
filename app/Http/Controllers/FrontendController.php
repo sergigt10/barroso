@@ -55,7 +55,7 @@ class FrontendController extends Controller
 
     public function implantologia()
     {
-        SEOTools::setTitle('Implants Girona, periodòncia Girona, Endodòncia Girona');
+        SEOTools::setTitle('Implants dentals Girona, Implantología dental Girona');
         SEOTools::setDescription("Els implants dentals han revolucionat l'odontologia dels últims 40 anys, permetent millorar la qualitat de vida de moltes persones.");
         SEOTools::setCanonical('https://www.clinicabarroso.com/implantologia-girona');
 
@@ -109,26 +109,44 @@ class FrontendController extends Controller
 
     public function sendEmail(Request $request){
 
-        $data=[
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'poblacio' => $request->poblacio,
-            'message' => $request->message
-        ];
+        $captcha = '';
+        $captcha = $_POST['g-recaptcha-response'];
+        if($captcha != ''){
+            // your secret key
+            $secret = env('GOOGLE_SECRET_RECHAPTA');
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
+            $array = json_decode($var, true);
+            if($array['success']){
 
-        $AdminMessage  = "Formulari de contacte WEB\n\n";
-        $AdminMessage .= "Nom i cognoms: ".utf8_decode($data['name'])."\n";
-        $AdminMessage .= "Email: ".utf8_decode($data['email'])."\n";
-        $AdminMessage .= "Tlf.: ".utf8_decode($data['phone'])."\n";
-        $AdminMessage .= "Pobl.: ".utf8_decode($data['poblacio'])."\n";
-        $AdminMessage .= "Missatge: ".utf8_decode($data['message'])."\n";
-    
-        mail("info@clinicabarroso.com", "Formulari de contacte WEB", $AdminMessage);
+                $data=[
+                    'name' => $request->name,
+                    'email' => $request->email,
+                    'phone' => $request->phone,
+                    'poblacio' => $request->poblacio,
+                    'message' => $request->message
+                ];
 
-        // Mail::to('info@clinicabarroso.com')->send(new ContactMail($data));
+                $AdminMessage  = "Formulari de contacte WEB\n\n";
+                $AdminMessage .= "Nom i cognoms: ".utf8_decode($data['name'])."\n";
+                $AdminMessage .= "Email: ".utf8_decode($data['email'])."\n";
+                $AdminMessage .= "Tlf.: ".utf8_decode($data['phone'])."\n";
+                $AdminMessage .= "Pobl.: ".utf8_decode($data['poblacio'])."\n";
+                $AdminMessage .= "Missatge: ".utf8_decode($data['message'])."\n";
+            
+                mail("consultes@clinicabarroso.com", "Formulari de contacte WEB", $AdminMessage, "From: ".$data['email']);
 
-        return back()->with(['message_mail' => trans('Missatge enviat correctament! En breu ens posarem en contacte. Gràcies')]);
+                // Mail::to('consultes@clinicabarroso.com')->send(new ContactMail($data));
+
+                return back()->with(['message_mail' => trans('Missatge enviat correctament! En breu ens posarem en contacte. Gràcies')]);
+            }else{
+                // bot pasar
+                return back()->with(['error_message_mail' => trans('ERROR Array! Seleccionar no soy un robot.')]);
+            }
+        }else{
+            // Es un bot
+            return back()->with(['error_message_mail' => trans('ERROR! Seleccionar no soy un robot.')]);
+        }
 
     }
 
