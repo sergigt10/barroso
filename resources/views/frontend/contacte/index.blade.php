@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-5 mb-30 offset-md-1">
                     <h3>@lang("Formulari de contacte")</h3>
-                    <form method="post" action="{{ route('frontend.sendMail') }}" method="post">
+                    <form method="post" action="{{ route('frontend.sendMail') }}">
                         @csrf
                         <!-- form message -->
                         @if(session('message_mail'))
